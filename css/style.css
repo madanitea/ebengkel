@@ -1,0 +1,312 @@
+@font-face{
+	font-family: Moku Brush;
+	src: url(../font/MokuBrush-Regular.otf);
+}
+
+@font-face{
+	font-family: Fredoka One;
+	src: url(../font/FredokaOne-Regular.otf);
+}
+
+body{
+	background: #f7f7f7;
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+
+#landing{
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.1);
+}
+
+.landing{
+  background-image: url("img/login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+
+#myBtn{
+  border-radius: 30px 30px 30px 30px;
+}
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999999999999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.perhalus-bawah{
+  margin-bottom: 65px;
+}
+
+.perhalus-bawah-s{
+  margin-bottom: 15px;
+}
+
+#form-control{
+  display:inline;
+  width:49.75%;
+  height:calc(2.25rem + 2px);
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  color:#495057;
+  background-color:#fff;
+  background-clip:padding-box;
+  border:1px solid #ced4da;
+  border-radius:.25rem;
+  transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#cari-go{
+  border-radius: 0px 30px 30px 0px;
+  height: 35px;
+  border:none;
+  width: 35px;
+  box-shadow: 7px 7px 20px 5px rgba(0,0,0,0.1);
+  background-color: #ffc107;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+#cari-go:hover{
+  border-radius: 0px 30px 30px 0px;
+  height: 35px;
+  border:none;
+  width: 35px;
+  box-shadow: 7px 7px 20px 5px rgba(0,0,0,0.1);
+  background-color: #ffd107;
+  transition-duration: 0.3s;
+  color: #fff;
+  cursor: pointer;
+}
+
+#cari{
+  border-radius: 30px 0px 0px 30px;
+  height: 30px;
+  border:none;
+  padding: 18px;
+  box-shadow: 7px 7px 20px 5px rgba(0,0,0,0.1);
+}
+
+#welcome{
+  text-align: justify;
+}
+
+#card-header{
+  text-align: center;
+}
+
+#action{
+  border-radius: 30px 30px 30px 30px;
+}
+#contact{
+  border-radius: 50%;
+}
+
+#profile-info{
+  border-radius: 50%;
+  height: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.1);
+}
+
+#navbar-menu {
+  border-radius: 30px 30px 30px 30px;
+  text-align: left;
+  border:none;
+}
+
+#pict{
+  box-shadow: 5px 15px 30px 5px rgba(0,0,0,0.1);
+}
+
+.card{
+	border-radius: 0% 0% 0% 0%;
+	border: 0;
+  box-shadow: 15px 15px 30px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+  border-radius: 0% 0% 0% 0%;
+  border: 0;
+}
+
+.card > .card-header{
+	background: transparent;
+	border-bottom:1px solid #eee;
+}
+
+.form-control{
+	border-radius: 0;
+}
+.form-control:focus{
+	box-shadow: none;
+}
+
+#login{
+  border-radius: 0px 30px 30px 0px;
+}
+
+#login-logo{
+  border-radius: 30px 0px 0px 30px;
+}
+
+.icon-user{
+	position: absolute;
+	top: 18px;
+	right: 18px;
+}
+
+.sub-title{
+	font-size: 12;
+	color: #727272;
+	margin-top: 12px;
+	display: block;
+}
+
+.mt-12{
+	margin-top: 120px;
+}
+
+.border-box{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	border: 1px solid rgba(171,169,169, 0,06);
+}
+
+.btn {
+	border-radius: 5%;
+}
+
+.mz-check {
+  cursor: pointer;
+  padding-left: 1.25rem;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative; }
+  .mz-check input {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    margin-left: -1.25rem; }
+    .mz-check input:checked + i:before {
+      border-width: 0;
+      background-color: inherit; }
+    .mz-check input:checked + span .active {
+      display: inherit; }
+    .mz-check input[type="radio"] + i, .mz-check input[type="radio"] + i:before {
+      border-radius: 50%; }
+    .mz-check input[type="checkbox"]:checked + i:after {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      display: table;
+      width: 6px;
+      height: 12px;
+      border: 2px solid;
+      border-top: 0;
+      border-left: 0;
+      content: ' '; }
+    .mz-check input[type="radio"]:checked + i:after {
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      display: table;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      content: ' '; }
+    .mz-check input[disabled] + i:before,
+    fieldset[disabled] .mz-check input + i:before {
+      opacity: 0.5; }
+    .mz-check input[disabled]:checked + i:before {
+      opacity: 0.5; }
+  .mz-check > i {
+    width: 0;
+    height: 18px;
+    line-height: 1;
+    margin-left: -20px;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 28px;
+    position: relative; }
+    .mz-check > i:before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 100%;
+      border: 2px solid #cecece;
+       }
+    .mz-check > i.no-icon:after {
+      display: none !important; }
+
+    .mz-blue {
+        background-color: #1784c7;
+        color: #fff;
+    }
+
+    .input-group-text{
+    	background: transparent;
+    	border-radius: 0;
+    }
+
+    .input-login{
+    	border-left: 0;
+    	padding-left: 0;
+
+    }
+
+    .input-login:focus{
+    	border-color: #ced4da;
+    	box-shadow: none;
+    	
+    }
+
+    @media only screen and (max-width: 758px) {
+    	.mt-12 {
+    		margin-top: 0;
+    	}
+    }
+
