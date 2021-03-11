@@ -13,12 +13,12 @@ $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "muhammadfarhanmadani248@gmail.com";
-$mail->Password = "#Ahan2310";
-$mail->SetFrom("muhammadfarhanmadani248@gmail.com");
+$mail->Username = "";
+$mail->Password = "";
+$mail->SetFrom("");
 $mail->Subject = "Test";
 $mail->Body = "hello";
-$mail->AddAddress("setiawanb31@gmail.com");
+$mail->AddAddress("");
 
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
